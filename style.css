@@ -3,6 +3,7 @@ body{
     background-color: rgb(250, 250, 250);
     display: grid;
     grid-template-columns: 1fr;
+    background-color: rgb(58, 58, 58);
 }
 .heading_div{
     display: flex;
@@ -12,20 +13,26 @@ body{
     display: flex;
     justify-content: center;
 }
+.heading{
+    color: white;
+}
 .container{
     border-radius: 15px;
     padding: 20px;
     display: inline-block;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    background-color: lightgrey;
+    background-color: rgb(0, 0, 0);
 }
 .input_div{
     display: grid;
     grid-template-columns: 150px 100px 100px;
+    justify-content: space-between;
     column-gap: 20px;
     margin-bottom: 20px;
+    width: 410px;
 }
 input{
-    background-color: rgb(126, 123, 123);
+    background-color: rgb(236, 234, 234);
     border: none;
     outline: none;
     border-radius: 5px;
@@ -35,7 +42,7 @@ input::placeholder{
     color: rgb(0, 0, 0);
 }
 input:focus{
-    background-color: rgb(114, 176, 212);
+    background-color:rgb(192, 154, 111);
 }
 .input_box{
     padding-left: 10px;
@@ -53,11 +60,21 @@ input:focus{
     font-weight: bolder;
     cursor: pointer;
 }
+.js-todo-list{
+    width: 410px;
+    background-color: lightgray;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
 .task_row{
     display: grid;
     grid-template-columns: 150px 100px 100px;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
     column-gap: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     align-items: center;
 }
 .delete_btn{
@@ -82,4 +99,5 @@ button:active{
     height: 30px;
     display: flex;
     align-items: center;
+    background-color: white;
 }
