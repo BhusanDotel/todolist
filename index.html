@@ -2,25 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list</title>
-    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="todolist.css">
 </head>
 <body>
-    <div class="heading_div">
-        <h1 class="heading">To Do Lists</h1>
-    </div>
-    <div class="div_to_flex">
+    <h1 class="heading">To do Lists</h1>
+    <div class="flex-div">
         <div class="container">
-            <div class="input_div">
-                <input type="text" class="input_box" placeholder="Task">
-                <input type="date" class="date_input_box"> 
-                <button class="add_btn">Add</button>
+            <div class="input-task">
+                <input class="activity" type="text" placeholder="Activities">
+                <input class="date" type="date" placeholder="Date">
+                <input class="time" type="time" placeholder="Time">
+                <Button class="add-btn">Add</Button>
             </div>
-            <div class="js-todo-list"></div>
+        <div class="hide-scroll">
+            <div class="show-task">
+                <!-- <div class="task-row">
+                    <p class="show_activity">Dacning</p>
+                    <p class="show-date">Monday</p>
+                    <p class="show-time">2/23</p>
+                    <button class="delete">Delete</button>
+                </div>
+        
+                <div class="task-row">
+                    <p class="show_activity">Dacning</p>
+                    <p class="show-date">Monday</p>
+                    <p class="show-time">5/23</p>
+                    <button class="delete">Delete</button>
+                </div> -->
+            </div>
+        </div>    
         </div>
     </div>
+
     <script src="todolist.js"></script>
 </body>
 </html>

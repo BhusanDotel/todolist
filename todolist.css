@@ -1,0 +1,265 @@
+body{
+    background-color: rgb(54, 54, 54);
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.flex-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container{
+    width: 550px;
+}
+.input-task{
+    background-color: lightseagreen;
+    border-radius: 20px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 550px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.activity{
+    padding-left: 5px;
+    width: 130px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    height: 30px;
+    box-sizing: border-box;
+}
+.activity::placeholder{
+    color: black;
+}
+.date{
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    height: 30px;
+    box-sizing: border-box;
+}
+.time{
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    height: 30px;
+    box-sizing: border-box;
+}
+.add-btn{
+    width: 100px;
+    background-color: rgb(2, 255, 2);
+    border: none;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    border-radius: 10px;
+}
+.hide-scroll{
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    background-color: rgb(132, 238, 132);
+    height: 350px;
+}
+.show-task{
+    overflow: scroll;
+    width: 585px;
+    height: 350px;
+    padding-top: 20px;
+}
+.task-row{
+    padding-right: 5px;
+    border-radius: 10px;
+    background-color: rgb(86, 150, 172);
+    margin-bottom: 20px;
+    width: 545px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.show_activity{
+    width: 130px;
+    margin-left: 10px;
+}
+.show-date{
+    width: 120px;
+}
+.show-time{
+    width: 100px;
+}
+.Delete{
+    width: 100px;
+    background-color: rgb(167, 7, 7);
+    border: none;
+    color: white;
+    height: 30px;
+    border-radius: 10px;
+}
+button:active{
+    transform: scale(0.7);
+}
+@media (min-width:200px) and (max-width:500px){
+    p{
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .flex-div{
+        margin-top: 30px;
+    }
+    .container{
+        width: 250px;
+    }
+    .input-task{
+        border-radius: 10px;
+        height: 30px;
+        width: 250px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .activity{
+        padding-left: 5px;
+        width: 80px;
+        border-radius: 5px;
+        height: 20px;
+    }
+    .date{
+        border-radius: 5px;
+        height: 20px;
+        max-width: 60px;
+    }
+    .time{
+        border-radius: 5px;
+        height: 20px;
+        max-width: 60px;
+    }
+    .add-btn{
+        width: 80px;
+        height: 20px;
+        border-radius: 5px;
+    }
+    .hide-scroll{
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 350px;
+    }
+    .show-task{
+        width: 585px;
+        height: 350px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .task-row{
+        padding-right: 5px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 245px;
+        height: 30px;
+    }
+    .show_activity{
+        width: 80px;
+        margin-left: 10px;
+    }
+    .show-date{
+        width: 80px;
+    }
+    .show-time{
+        width: 40px;
+    }
+    .Delete{
+        width: 80px;
+        height: 20px;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width:501px) and (max-width:700px){
+    p{
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .flex-div{
+        margin-top: 40px;
+    }
+    .container{
+        width: 350px;
+    }
+    .input-task{
+        border-radius: 10px;
+        height: 30px;
+        width: 350px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .activity{
+        padding-left: 5px;
+        width: 90px;
+        border-radius: 5px;
+        height: 20px;
+    }
+    .date{
+        border-radius: 5px;
+        height: 20px;
+        max-width: 80px;
+    }
+    .time{
+        border-radius: 5px;
+        height: 20px;
+        max-width: 80px;
+    }
+    .add-btn{
+        width: 80px;
+        height: 20px;
+        border-radius: 5px;
+    }
+    .hide-scroll{
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 350px;
+    }
+    .show-task{
+        width: 585px;
+        height: 360px;
+        padding-top: 10px;
+    }
+    .task-row{
+        padding-right: 5px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        width: 345px;
+        height: 30px;
+    }
+    .show_activity{
+        width: 80px;
+        margin-left: 10px;
+    }
+    .show-date{
+        width: 80px;
+    }
+    .show-time{
+        width: 40px;
+    }
+    .Delete{
+        width: 80px;
+        height: 20px;
+        border-radius: 5px;
+    }
+}
